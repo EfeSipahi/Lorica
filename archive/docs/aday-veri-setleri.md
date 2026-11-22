@@ -6,7 +6,7 @@ kullanılmaya başlandığında kendi belgesi `docs/` altına ayrıca yazılmal�
 
 Bilgiler Ekim 2026'da kaynak sayfalardan derlendi. "Doğrulanmadı" diye işaretli maddeler
 kullanılmadan önce kontrol edilmelidir. 17 Ekim 2026'daki kontrolde yedi bilgi düzeltildi;
-ayrıntılar [veri seti araştırma raporunda](../reports/HTTP%20request%20datasets%20for%20IDS.md).
+ayrıntılar [veri seti araştırma raporunda](../../reports/HTTP%20request%20datasets%20for%20IDS.md).
 
 ## Neden yalnızca bu veri setleri?
 

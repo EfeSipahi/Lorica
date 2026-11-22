@@ -155,7 +155,7 @@ Full method + path + query + headers + body: CSIC 2010 (raw txt), ECML/PKDD 2007
 - ATRDF: "All the datasets contain HTTP traffic of API requests and responses". — [GitHub README](https://github.com/ArielCyber/Cisco_Ariel_Uni_API_security_challenge)
 
 ### Inferences
-- The project's `docs/aday-veri-setleri.md` contains errors on these points. It says SR-BH's raw request is in a `full_http_request` column; the official CSV has split columns with a selected header subset. It calls modsec-learn's normal data "realistic normal traffic" requests; in the repo these are query strings only. The full-request version of that benign data is the newer open-appsec `legitimate.zip`.
+- The project's `archive/docs/aday-veri-setleri.md` contains errors on these points. It says SR-BH's raw request is in a `full_http_request` column; the official CSV has split columns with a selected header subset. It calls modsec-learn's normal data "realistic normal traffic" requests; in the repo these are query strings only. The full-request version of that benign data is the newer open-appsec `legitimate.zip`.
 - For a feature extractor that reads path, query, form body and headers, CSIC 2010, ECML/PKDD, SR-BH, open-appsec legitimate and ATRDF are directly usable. The query-level sets can only test the query/parameter features.
 
 ### Gaps

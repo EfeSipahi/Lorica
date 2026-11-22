@@ -14,7 +14,7 @@ the six attack-value sources. Test sets follow in step 7.
   own steps, and each of those reports what it removed and why.
 - Every output folder holds a `manifest.json`: script name and hash, input files and their
   hashes, records read, written and skipped (with reasons), and counts per label and type.
-- New behaviour goes in new scripts. Recorded experiments depend on the hashes of
+- New behaviour goes in new scripts. Recorded experiments in `archive/` depend on the hashes of
   `extract_features.py` and the training scripts, so those are not edited.
 - Outputs go under `data/processed/common/` and are git-ignored, because of size and because
   several sources have no license. Manifests are committed, so anyone can check that their

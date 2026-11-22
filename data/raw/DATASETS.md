@@ -54,7 +54,7 @@ CSIC/ECML mirror `424c6e1`, ATRDF `9494785`.
   their own integrity tests.
 - `owasp/` is byte-for-byte the content of `owasp.zip` from Zenodo 17178461.
 - CSIC request counts are 36,000 / 36,000 / 25,065. `normalTrafficTraining.txt` and
-  `anomalousTrafficTest.txt` match the SHA-256 values in `data/http-mini/manifest.json`.
+  `anomalousTrafficTest.txt` match the SHA-256 values in `archive/data/http-mini/manifest.json`.
 - The first download (night of 18 October) left `legitimate.zip` cut off at 697 of 1,204 MB but
   still reported "All downloads OK". On Fedora, `wget` is Wget2, which can exit without an error on a
   broken download. The file was completed, and the script now checks the md5 of every file.

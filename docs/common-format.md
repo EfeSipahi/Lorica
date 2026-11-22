@@ -16,7 +16,7 @@ Both types are JSON Lines: one JSON object per line, UTF-8, keys in the order sh
 ## Request records
 
 File: `requests.jsonl`, or `requests.jsonl.gz` for large sources. Field names match
-`data/http-mini/requests.jsonl`, so the existing extractor can also read the new files.
+`archive/data/http-mini/requests.jsonl`, so the old extractor (`archive/scripts/extract_features.py`) can also read the new files.
 
 | Field | Type | Meaning |
 |---|---|---|

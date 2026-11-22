@@ -30,5 +30,5 @@ __pycache__/
 !/data/raw/DATASETS.md
 
 # Tekrar eğitim denemeleri; paylaşılacak deney bilinçli olarak eklenir.
-/models/*-repeat/
-/reports/*-repeat/
+/archive/models/*-repeat/
+/archive/reports/*-repeat/
