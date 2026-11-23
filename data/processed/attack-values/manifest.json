@@ -1,0 +1,67 @@
+{
+  "script": "/home/user/Repositores/Lorica/scripts/merge_attack_values.py",
+  "script_sha256": "bbb2563fb375762405cedf25e7d309e3df5ca7e048927f653d1ed7e32da3729a",
+  "inputs": [
+    {
+      "path": "data/processed/openappsec-malicious/values.jsonl.gz",
+      "bytes": 311194,
+      "sha256": "b5a81747307eec94e39335b781db1fdc4417c1fc2aa2e019f8bc1429407735f1"
+    },
+    {
+      "path": "data/processed/modsec-learn/values.jsonl.gz",
+      "bytes": 539659,
+      "sha256": "4e47cee86539ff610352ff5f43c84ec80e4037c7b0bc7c2b256c83bb45db5304"
+    },
+    {
+      "path": "data/processed/httpparams/values.jsonl.gz",
+      "bytes": 246273,
+      "sha256": "1790224e886e81cd8cf31aec0f1422d7a66f4400ecdcc7547667ac1da363d44d"
+    },
+    {
+      "path": "data/processed/gotestwaf/values.jsonl.gz",
+      "bytes": 7683,
+      "sha256": "c3ad025855e28681e46ddf2fb513dcb6717e5007dcd35013b1d41c65ff16b513"
+    }
+  ],
+  "output": "values.jsonl.gz",
+  "counts": {
+    "read": 68516,
+    "written": 68052
+  },
+  "skipped": {},
+  "labels": {
+    "0": 47,
+    "1": 68005
+  },
+  "attack_types": {
+    "cmdi": 1310,
+    "crlf": 7,
+    "ldapi": 3,
+    "log4shell": 110,
+    "nosqli": 5,
+    "other": 25,
+    "path-traversal": 14449,
+    "sqli": 30540,
+    "ssi": 3,
+    "ssti": 3,
+    "xss": 21506,
+    "xxe": 44
+  },
+  "notes": [
+    "exact-string deduplication; first source in order openappsec-malicious, modsec-learn, httpparams, gotestwaf wins"
+  ],
+  "created_at": "2026-11-23T21:48:43+00:00",
+  "kept_per_first_source": {
+    "openappsec-malicious": 36961,
+    "modsec-learn": 19615,
+    "httpparams": 11316,
+    "gotestwaf": 160
+  },
+  "duplicates_removed": 464,
+  "label_conflicts": [],
+  "value_length": {
+    "median": 61.0,
+    "p95": 235,
+    "max": 2831
+  }
+}

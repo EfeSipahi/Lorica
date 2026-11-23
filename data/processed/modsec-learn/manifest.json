@@ -1,0 +1,34 @@
+{
+  "script": "/home/user/Repositores/Lorica/scripts/convert_modsec_learn.py",
+  "script_sha256": "c1aa197ec95f53f45b358a8e62726fdd84ed761ef09ab73cccc62a420d3820a7",
+  "inputs": [
+    {
+      "path": "data/raw/modsec-learn-dataset/sqli_kaggle/sqli_parsed.json",
+      "bytes": 1761111,
+      "sha256": "e156b4a044e4992ec7b8ffc92152ce96a5009bc7d0ddb7222fd6c60e636381ff"
+    },
+    {
+      "path": "data/raw/modsec-learn-dataset/sqlmap/sqli_parsed.json",
+      "bytes": 2378247,
+      "sha256": "1ccefd385adfeeae041ec1eb2e7bb176ade791e02e4b0715f5269285646587f4"
+    }
+  ],
+  "output": "values.jsonl.gz",
+  "counts": {
+    "read": 19623,
+    "written": 19622
+  },
+  "skipped": {
+    "empty": 1
+  },
+  "labels": {
+    "1": 19622
+  },
+  "attack_types": {
+    "sqli": 19622
+  },
+  "notes": [
+    "form-decoded once after removing the p= wrapper"
+  ],
+  "created_at": "2026-11-23T21:48:28+00:00"
+}

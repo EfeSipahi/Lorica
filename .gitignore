@@ -32,3 +32,7 @@ __pycache__/
 # Tekrar eğitim denemeleri; paylaşılacak deney bilinçli olarak eklenir.
 /archive/models/*-repeat/
 /archive/reports/*-repeat/
+# Converted data: data files stay local, manifests may be committed.
+/data/processed/**
+!/data/processed/**/
+!/data/processed/**/manifest.json

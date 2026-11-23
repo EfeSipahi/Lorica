@@ -1,0 +1,35 @@
+{
+  "script": "/home/user/Repositores/Lorica/scripts/convert_ecml.py",
+  "script_sha256": "29496214b6aaae7467f13f016e96f07b65f3026b4b87a2b114adf5597861da78",
+  "inputs": [
+    {
+      "path": "data/raw/ecml-pkdd-2007/learning_dataset_xml.zip",
+      "bytes": 19954936,
+      "sha256": "4db6082609031aa5fc3f0bb29385040e2af08940b2ac64859a0f267358cab5dc"
+    }
+  ],
+  "output": "requests.jsonl.gz",
+  "counts": {
+    "read": 50116,
+    "written": 50116
+  },
+  "skipped": {},
+  "labels": {
+    "0": 35006,
+    "1": 15110
+  },
+  "attack_types": {
+    "cmdi": 2302,
+    "ldapi": 2279,
+    "path-traversal": 2295,
+    "sqli": 2274,
+    "ssi": 1856,
+    "xpathi": 2279,
+    "xss": 1825
+  },
+  "notes": [
+    "meta.attack_spans: [part, start, end), 0-based, end-exclusive, into the record",
+    "out-of-context attacks are labeled 1; meta.in_context keeps the flag"
+  ],
+  "created_at": "2026-11-23T21:48:41+00:00"
+}

@@ -1,0 +1,33 @@
+{
+  "script": "/home/user/Repositores/Lorica/scripts/convert_openappsec_malicious.py",
+  "script_sha256": "1e6f4cdd9ec320ad4f1f815090111899e876587ad6239762b1144dc04f8915b4",
+  "inputs": [
+    {
+      "path": "data/raw/open-appsec/malicious.zip",
+      "bytes": 452537,
+      "sha256": "131314e5c13b07ec686e6b16b8010008063d977b5ff8eb552819c138c00b7b2b"
+    }
+  ],
+  "output": "values.jsonl.gz",
+  "counts": {
+    "read": 73924,
+    "written": 36962
+  },
+  "skipped": {},
+  "labels": {
+    "1": 36962
+  },
+  "attack_types": {
+    "cmdi": 1258,
+    "log4shell": 110,
+    "path-traversal": 14157,
+    "sqli": 458,
+    "xss": 20944,
+    "xxe": 35
+  },
+  "notes": [
+    "one value per GET/POST pair; form-decoded once (+ is a space)",
+    "shellshock is typed cmdi; meta.source_type keeps the file name"
+  ],
+  "created_at": "2026-11-23T21:48:27+00:00"
+}

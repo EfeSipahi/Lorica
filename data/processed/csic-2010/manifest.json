@@ -1,0 +1,37 @@
+{
+  "script": "/home/user/Repositores/Lorica/scripts/convert_csic.py",
+  "script_sha256": "7714f285ebc13f7149eb62ea55382c3feab1a8f2c4d5ccdd6d761996f577e37c",
+  "inputs": [
+    {
+      "path": "data/raw/csic-2010/normalTrafficTraining.txt",
+      "bytes": 20148988,
+      "sha256": "d51de812d9201ef2b173b6ae3e3e740c309047ac85545c06c51d6fb1ddbc1e63"
+    },
+    {
+      "path": "data/raw/csic-2010/normalTrafficTest.txt",
+      "bytes": 20151204,
+      "sha256": "f05dfc312d5d14fd1ed8371de27a9e4deab3dc09265f5d7f9df2643df8385089"
+    },
+    {
+      "path": "data/raw/csic-2010/anomalousTrafficTest.txt",
+      "bytes": 15734523,
+      "sha256": "12fa4f0d496ceb859bb2652abf7f0f0ed8c59e1d9ce501b8a9a0ef38a625c046"
+    }
+  ],
+  "output": "requests.jsonl.gz",
+  "counts": {
+    "read": 97065,
+    "written": 97065
+  },
+  "skipped": {},
+  "labels": {
+    "0": 72000,
+    "1": 25065
+  },
+  "attack_types": {},
+  "notes": [
+    "read as Latin-1; values are percent-encoded Latin-1 (Jam%F3n)",
+    "all three files are test data; normalTrafficTraining is kept for the phase 5 diagnostic run only"
+  ],
+  "created_at": "2026-11-23T21:48:33+00:00"
+}
