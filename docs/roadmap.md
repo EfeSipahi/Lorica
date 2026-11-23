@@ -43,7 +43,7 @@ Each phase ends with a check, and the next phase starts after the owner has seen
 
 | # | Phase | Output | Done when |
 |---|---|---|---|
-| 0 | Branch setup | `scripts/`, `tests/`, `docs/tuna/` on TUNA; this file as `docs/tuna/roadmap.md` | Folders exist; `archive/` untouched |
+| 0 | Branch setup | `scripts/`, `tests/` on TUNA; this file as `docs/roadmap.md` | Folders exist; `archive/` untouched |
 | 1 | Value extractor | `scripts/extract_values.py` + tests built from hand-made requests and real ECML samples | Tests pass; on 1,000 open-appsec and 1,000 CSIC requests, every value's `raw` equals its `span` slice |
 | 2 | First data | Converters for open-appsec legitimate (about 150 sites to start), open-appsec malicious, modsec-learn, HttpParams attacks, GoTestWAF; test converters for CSIC and ECML; dedup and overlap check against those two test sets | Manifests written; counts per source and type reported; overlaps removed and listed |
 | 3 | Injection and swap set | `scripts/inject.py`: attack and swap requests, split by site and payload group | Artifact probe: a model that sees only non-content features (value length, location, encoding style, slot added) cannot tell swapped requests from untouched ones (ROC AUC under 0.6) |
@@ -51,7 +51,7 @@ Each phase ends with a check, and the next phase starts after the owner has seen
 | 5 | Full test suite | Converters and labels for the 30-day ModSecurity logs, ModSec-WP, SR-BH (original and X-WAD labels), then ATRDF | One report: detection at 1% false alarms per test set, per attack type and per location; plus the CSIC diagnostic run |
 | 6 | Better models | Hand features (special characters, entropy, decode depth) with HistGradientBoosting; a small character CNN only if CPU time allows | Beats the baseline on validation; test sets used once per model, never for tuning |
 | 7 | More attack data | SecLists and PayloadsAllTheThings with hand review of a sample per type; retrain the best model | Per-type detection does not drop on any test set |
-| 8 | Write-up | Results report in `docs/tuna/` | Owner approves it |
+| 8 | Write-up | Results report in `docs/` | Owner approves it |
 
 Machine: 7 GB RAM, 4 cores. Everything streams; phase 2 uses about 15% of open-appsec so a full
 run stays under an hour (estimate).
